@@ -32,28 +32,41 @@ public class ExecutorOrdenacao {
 	public static void executarParaCadaTamanhoDeEntrada(int[] tamahos){
 		for (int tamaho : tamahos) {
 			//System.out.println("Execução da fila de métodos de ordenação para n=:" + tamaho);
-			int[] array = gerarEntradaAleatoria(tamaho);
 			
 			List<MetodoDeOrdenacao> metodos = FilaDeExecucao.itens;
 			
 			for (MetodoDeOrdenacao metodoDeOrdenacao : metodos) {
+				int[] array = gerarEntradaAleatoria(tamaho);
 				Date inicio = new Date();
 				metodoDeOrdenacao.ordenar(array);
 				Date fim = new Date();
 				System.out.println(metodoDeOrdenacao.getClass().getSimpleName() + ": n=" + tamaho + " - tempo = " + (fim.getTime() -inicio.getTime())+"ms ");
 			}
 			
+			/*
 			System.out.println("-------------------------------------------------");
+			//printArrayOrdenado(array);
 			for (int item : array) {
 				System.out.print(item+", ");
 			}
+			*/
+			
 			System.out.println();
 			System.out.println("-------------------------------------------------");
 		}	
 	}
+
+	private static void printArrayOrdenado(int[] array) {
+		for (int item : array) {
+			System.out.print(item+", ");
+		}
+		System.out.println();
+		System.out.println("-------------------------------------------------");
+	}
 	
 	public static void main(String[] args) {
-		executarParaCadaTamanhoDeEntrada(new int[]{10,20,30});
+		// 10000, 30000, 50000, 70000, 100000
+		executarParaCadaTamanhoDeEntrada(new int[]{10000, 30000, 50000, 70000, 100000});
 	}
 	
 }
