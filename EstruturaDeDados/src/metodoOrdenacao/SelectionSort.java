@@ -1,4 +1,4 @@
-package MetodoOrdenacao;
+package metodoOrdenacao;
 /**
  * @author Joao Victor
  *

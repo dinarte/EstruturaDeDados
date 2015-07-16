@@ -3,7 +3,7 @@ package executorOrdenacao;
 import java.util.Date;
 import java.util.List;
 
-import MetodoOrdenacao.MetodoDeOrdenacao;
+import metodoOrdenacao.MetodoDeOrdenacao;
 
 /**
  * Esta classe executa os metodos de ordenação da fila de execução para cada tamanho de entrada declarado.

@@ -1,4 +1,4 @@
-package MetodoOrdenacao;
+package metodoOrdenacao;
 
 /**
  * Classe que implemanta o metodo de ordenacao MergeSort

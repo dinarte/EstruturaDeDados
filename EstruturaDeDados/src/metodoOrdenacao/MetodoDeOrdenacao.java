@@ -1,4 +1,4 @@
-package MetodoOrdenacao;
+package metodoOrdenacao;
 
 public interface MetodoDeOrdenacao {
 

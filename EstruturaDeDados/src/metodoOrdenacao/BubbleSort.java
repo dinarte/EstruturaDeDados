@@ -1,4 +1,4 @@
-package MetodoOrdenacao;
+package metodoOrdenacao;
 
 /**
  * Classe que implementa o metodo de ordenação BubbleSort
