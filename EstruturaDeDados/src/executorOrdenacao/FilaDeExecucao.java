@@ -17,11 +17,11 @@ public class FilaDeExecucao  {
 	 public static List<MetodoDeOrdenacao> itens = new LinkedList<MetodoDeOrdenacao>();
 
 	 static{
+		 itens.add(new Quicksort());
 		 itens.add(new BubbleSort());
 		 itens.add(new HeapSort());
 		 itens.add(new SelectionSort());
 		 itens.add(new InsertionSort());
-		 itens.add(new Quicksort());
 		 itens.add(new MergeSort());
 	 }
 }
