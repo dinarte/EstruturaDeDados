@@ -37,7 +37,7 @@ public class SelectionSort implements MetodoDeOrdenacao{
 				array[start] = aux;
 			}	
 		}
-		exibirPassos(array);
+		//exibirPassos(array);
 	}
 	
 	/**

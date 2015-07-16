@@ -20,7 +20,7 @@ public class ExecutorOrdenacao {
 	private static int[] gerarEntradaAleatoria(int tamanho){
 		int[] array = new int[tamanho];
 		for(int i = 0;  i< tamanho; i++){
-			array[i] = (int) (Math.random() * 8 + 1);  
+			array[i] = (int) (Math.random() * tamanho + 1);  
 		}
 		return array;
 	}
@@ -40,13 +40,20 @@ public class ExecutorOrdenacao {
 				Date inicio = new Date();
 				metodoDeOrdenacao.ordenar(array);
 				Date fim = new Date();
-				System.out.println(metodoDeOrdenacao.getClass().getSimpleName() + ": n=" + tamaho + " - tempo em ms = " + (fim.getTime() -inicio.getTime()));
+				System.out.println(metodoDeOrdenacao.getClass().getSimpleName() + ": n=" + tamaho + " - tempo = " + (fim.getTime() -inicio.getTime())+"ms ");
 			}
+			
+			System.out.println("-------------------------------------------------");
+			for (int item : array) {
+				System.out.print(item+", ");
+			}
+			System.out.println();
+			System.out.println("-------------------------------------------------");
 		}	
 	}
 	
 	public static void main(String[] args) {
-		executarParaCadaTamanhoDeEntrada(new int[]{10000,30000,50000,70000,90000,100000});
+		executarParaCadaTamanhoDeEntrada(new int[]{10,20,30});
 	}
 	
 }

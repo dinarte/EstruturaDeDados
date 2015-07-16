@@ -15,7 +15,7 @@ public class Quicksort implements MetodoDeOrdenacao{
 		
 		quicksort(array, inicio, fim);
 		
-		exibirPassos(array);
+		//exibirPassos(array);
 	}
 	
 	/**

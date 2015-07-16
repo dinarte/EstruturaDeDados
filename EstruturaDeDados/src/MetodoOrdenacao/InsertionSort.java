@@ -36,7 +36,7 @@ public class InsertionSort implements MetodoDeOrdenacao{
 			
 			array[anterior+1] = escolhido;
 		}
-		exibirPassos(array);
+		//exibirPassos(array);
 	}
 	
 	/**
