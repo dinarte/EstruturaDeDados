@@ -58,23 +58,4 @@ public class HeapSort implements MetodoDeOrdenacao{
 	        }
 	    }
 
-	
-
-	//teste do algorítimo
-	public static void main(String[] args) {
-		int[] n = new int[5];
-		n[0] = 5;
-		n[1] = 3;
-		n[2] = 1;
-		n[3] = 2;
-		n[4] = 4;
-		
-		new HeapSort().ordenar(n);
-		
-		for (int i : n) {
-			System.out.println(i);
-		}
-	}
-	
-	
 }

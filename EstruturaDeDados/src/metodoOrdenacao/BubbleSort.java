@@ -25,21 +25,4 @@ public class BubbleSort implements MetodoDeOrdenacao{
 		}	
 	}
 	
-	
-	//teste do algorítimo
-	public static void main(String[] args) {
-		int[] n = new int[5];
-		n[0] = 5;
-		n[1] = 5;
-		n[2] = 1;
-		n[3] = 1;
-		n[4] = 4;
-		
-		new BubbleSort().ordenar(n);
-		
-		for (int i : n) {
-			System.out.println(i);
-		}	
-	}
-
 }
